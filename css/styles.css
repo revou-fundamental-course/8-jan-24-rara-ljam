@@ -1,5 +1,6 @@
 body {
-    font-family: Arial;  
+    font-family: Arial; 
+    padding: 30px; 
 }
 
 header {
@@ -7,44 +8,76 @@ header {
 }
 
 header p {
-    font-size: x-small;
+    font-size: small;
     margin-top: -10px;
 }
 
 header h4 {
     margin-top: 30px;
+    
+}
+.HeaderLuas {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 30px;
+    background-color:#00509d;
+    color: white;
 }
 
+section p {
+    margin-top: -50px;
+    font-size: medium;
+}
 .input {
     display: flex;
-    direction: column;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#LabelsquareSide {
+    text-align: center;
+    margin-top: 20px;
 }
 
 #squareSide {
     outline: none;
     border-radius: 5px;
     border-color: lightblue;
-    padding: 10px;
+    padding: 15px;
     margin-top: 10px;
 }
-#LabelsquareSide {
-    text-align: center;
-}
+
 #squareSide:focus {
     border: solid #00509d;
 }
 
-.hitungButton {
-    background-color: #00509d ;
-    
-}
-
-.resetButton {
-    background-color: #fdc500;
-}
-
-.hitungButton .resetButton {
+button {
+    margin-top: 30px;
     color: white;
     border: none;
     border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    /*perlu dibenahi*/
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    /* sampai sini */
+    
+}
+.hitungButton {
+    background-color: #00509d ;
+   
+}
+.hitungButton:hover {
+    background-color: #00296b;
+    color: #fdc500;
+}
+.resetButton {
+    background-color: #fdc500;
+}
+.resetButton:hover {
+    background-color: #cd7213;
+    color: #00296b;
 }
