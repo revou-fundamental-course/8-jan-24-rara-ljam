@@ -5,6 +5,7 @@ body {
 
 header {
     text-align: center;
+    position: sticky;
 }
 
 header p {
@@ -15,8 +16,9 @@ header p {
 header h4 {
     margin-top: 30px;
     
+    
 }
-.HeaderLuas {
+.HeaderLuas,.HeaderKeliling {
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -25,10 +27,11 @@ header h4 {
     color: white;
 }
 
-section p {
+.LuasPersegi p,.KelilingPersegi p {
     margin-top: -50px;
     font-size: medium;
 }
+
 .input {
     display: flex;
     flex-direction: column;
@@ -38,6 +41,7 @@ section p {
 #LabelsquareSide {
     text-align: center;
     margin-top: 20px;
+    font-size: large;
 }
 
 #squareSide {
@@ -53,21 +57,20 @@ section p {
 }
 
 button {
-    margin-top: 30px;
+    
     color: white;
     border: none;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
-    /*perlu dibenahi*/
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    /* sampai sini */
     
 }
 .hitungButton {
     background-color: #00509d ;
+    margin-top: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
    
 }
 .hitungButton:hover {
@@ -76,8 +79,12 @@ button {
 }
 .resetButton {
     background-color: #fdc500;
+    margin-top: 50px;
+    
+    
 }
 .resetButton:hover {
     background-color: #cd7213;
     color: #00296b;
 }
+
